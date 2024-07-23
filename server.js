@@ -16,7 +16,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const port = port || 8090;
+const port = PORT || 8090;
 const db = "mongodb+srv://dhanushg:"+pass_word+"@dairy.oblq3mb.mongodb.net/";
 //const db="mongod://localhost:27017/diaryDB"
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
